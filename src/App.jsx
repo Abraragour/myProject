@@ -28,7 +28,7 @@ import ForgetPassword from './components/ForgetPassword/ForgetPassword';
 
  let query= new QueryClient();
  
-let x=createHashRouter([
+let x=createBrowserRouter([
   {path:'' ,element:<Layout/>,children:[
     {index:true ,element:<ProtectedRoute><Home/></ProtectedRoute> },
     {path:'categories' ,element: <ProtectedRoute><Categories/></ProtectedRoute>  },
