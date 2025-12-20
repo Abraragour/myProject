@@ -1,0 +1,13 @@
+import React, { useState } from 'react'
+import { useEffect } from 'react';
+import Style from './TemplateName.module.css'
+
+export default function TemplateName() {
+    const [counter, setCounter] = useState(0);
+    useEffect(()=>{},[])
+  return (
+    <>
+      <h2>TemplateName</h2>
+    </>
+  )
+}
