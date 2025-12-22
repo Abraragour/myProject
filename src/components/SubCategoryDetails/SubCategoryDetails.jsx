@@ -3,7 +3,6 @@ import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { ClimbingBoxLoader } from 'react-spinners';
 import Style from './SubCategoryDetails.module.css';
-
 export default function SubCategoryDetails() {
   const { id } = useParams();
   const [subDetails, setSubDetails] = useState(null);
