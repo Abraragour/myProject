@@ -24,6 +24,8 @@ import Address from './components/address/address';
 import AllOrders from './components/AllOrders/AllOrders';
 import CashPayment from './components/CashPayment/CashPayment';
 import ForgetPassword from './components/ForgetPassword/ForgetPassword';
+import CategoryDetails from './components/CategoryDetails/CategoryDetails';
+import SubCategoryDetails from './components/subCategoryDetails/subCategoryDetails';
 
 
  let query= new QueryClient();
@@ -32,6 +34,9 @@ let x=createBrowserRouter([
   {path:'' ,element:<Layout/>,children:[
     {index:true ,element:<ProtectedRoute><Home/></ProtectedRoute> },
     {path:'categories' ,element: <ProtectedRoute><Categories/></ProtectedRoute>  },
+        {path:'CategoryDetails/:id' ,element: <ProtectedRoute><CategoryDetails/></ProtectedRoute>  },
+        {path:'SubCategoryDetails/:id' ,element: <ProtectedRoute><SubCategoryDetails/></ProtectedRoute>  },
+
     {path:'brands' ,element: <ProtectedRoute> <Brands/></ProtectedRoute> },
     {path:'cart' ,element:<ProtectedRoute><Cart/></ProtectedRoute> },
     {path:'products' ,element:<ProtectedRoute> <Products/></ProtectedRoute>},

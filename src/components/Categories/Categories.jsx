@@ -4,6 +4,7 @@ import Style from './Categories.module.css'
 import { ClimbingBoxLoader } from 'react-spinners';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
+import { Link } from 'react-router-dom';
 
 export default function Categories() {
     const [categories, setcategories] = useState(0);
@@ -30,7 +31,6 @@ if(isError){
   function getCategories ()
     {
         return axios.get('https://ecommerce.routemisr.com/api/v1/categories')
-        //  console.log(data?.data?.data)
 
    }
 
@@ -39,11 +39,11 @@ if(isError){
    <>
   <div className="flex flex-wrap gap-y-8">
   {data?.data?.data.map((item) => (
-    <div key={item._id} className="w-1/3 px-4">
+    <Link to={`/CategoryDetails/${item._id}`}  key={item._id} className="w-1/3 px-4">
 
       <div className="rounded-xl overflow-hidden shadow-lg bg-white">
 
-        <div className="h-[300px] bg-white flex items-center justify-center">
+        <div   className="h-[300px] bg-white flex items-center justify-center">
           <img
             src={item.image}
             alt={item.name}
@@ -58,7 +58,7 @@ if(isError){
         </div>
 
       </div>
-    </div>
+    </Link>
   ))}
 </div>
 
