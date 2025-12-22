@@ -25,7 +25,7 @@ import AllOrders from './components/AllOrders/AllOrders';
 import CashPayment from './components/CashPayment/CashPayment';
 import ForgetPassword from './components/ForgetPassword/ForgetPassword';
 import CategoryDetails from './components/CategoryDetails/CategoryDetails';
-import SubCategoryDetails from './components/subCategoryDetails/subCategoryDetails';
+import SubCategoryDetails from './components/SubCategoryDetails/SubCategoryDetails';
 
 
  let query= new QueryClient();
