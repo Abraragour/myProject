@@ -67,8 +67,8 @@ if(isError){
 async function handleClearCart() {
        let response=await clearCart()
   .then((response) => {
-    console.log(response.data.message); // رسالة النجاح
-    setCartDetails(null); // مسح محتويات الكارت من الواجهة
+    console.log(response.data.message);
+    setCartDetails(null); 
   });
 }
 

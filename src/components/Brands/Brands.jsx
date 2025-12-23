@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { ClimbingBoxLoader } from 'react-spinners';
-import Style from './Brands.module.css'; // لو حابة تضيفي أي ستايل إضافي
-
+import Style from './Brands.module.css'; 
 export default function Brands() {
   const [Brands, setBrands] = useState([]);
   const [Loading, setLoading] = useState(false);

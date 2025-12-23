@@ -20,7 +20,7 @@ export default function MainSlider() {
     var settings = {
     dots: false,
     infinite: true,
-    speed: 1500,
+    speed: 100,
     slidesToShow:1,
     slidesToScroll: 1,
     autoplay:true,

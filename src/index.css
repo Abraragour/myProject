@@ -9,7 +9,6 @@
 .row{
   @apply flex flex-wrap px-4 py-8 items-center
 }
-/* You can add global styles to this file, and also import other style files */
 :root {
   --main-color: #0aad0a;
   --light-color: #f0f3f2;
